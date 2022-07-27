@@ -17,3 +17,15 @@
     width: 100%;
     margin-top: 2%;
 }
+.container2 textarea{
+    background-color: white;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.29);
+    border-radius: 15px;
+    outline: none;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 2%;
+}

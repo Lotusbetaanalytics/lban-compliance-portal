@@ -1,9 +1,10 @@
 import * as React from 'react';
 import styles from "./styles.module.css"
 
-const Input = ({ onChange, value, type, title, readOnly = false, required = false, onBlur = null}) => {
+
+const Input2 = ({ onChange, value, type, title, readOnly = false, required = false, onBlur = null}) => {
     return <div className={styles.container}>
-        <label>{title}</label>
+       
         <input
             type={type}
             onChange={onChange}
@@ -16,6 +17,4 @@ const Input = ({ onChange, value, type, title, readOnly = false, required = fals
     </div>;
 };
 
-export default Input;
-
-
+export default Input2;

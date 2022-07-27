@@ -1,16 +1,14 @@
 .container{
     display: flex;
-    background-color: gray;
     padding: 10%;
-    
     width: 100%;
     flex-direction: column;
 }
 .section1{
     display: grid;
-    background-color: yellow;
+    
     grid-template-columns: 30% 30% 30%;
-    padding: 1%;
+    /* padding: 1%; */
     width: 100%;
     justify-content: space-around;
     margin-bottom: 20px;
@@ -20,7 +18,7 @@
     width: 100%;
     display: grid;
     margin-bottom: 10px;
-    background-color: blue;
+   
 }
 .inputContainer2{
     width: 100%;
@@ -32,22 +30,26 @@
 .inputContainer_left{
     width: 100%;
     display: grid;
+    padding: 2.5% 5%;
+    
+    align-items: center;
+}
+.border {
     border-bottom: 1px solid rgba(0, 0, 0, 0.37);
     border-right: 1px solid rgba(0, 0, 0, 0.37);
     border-left: 1px solid rgba(0, 0, 0, 0.37);
-    padding-left: 5%;
-    padding-right: 5%;
-    align-items: center;
 }
 .inputContainer_middle{
     width: 100%;
+    min-height: 3rem;
     display: grid;
-    grid-template-columns: 50% 25% 25%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.37);
-   
+    grid-template-columns: 60% 20% 20%;
     justify-content: center;
     align-items: center;
     
+}
+.border_middle{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.37);
 }
 .weight{
     display: grid;
@@ -55,6 +57,9 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    
+}
+.weight_border{
     border-right: 1px solid rgba(0, 0, 0, 0.37);
     border-left: 1px solid rgba(0, 0, 0, 0.37);
 }
@@ -64,22 +69,30 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    /* padding: .2rem 0; */
     
 }
-h1{
+.container h1{
 font-weight: bold;
+font-size: 20px;
+margin-bottom: 20px;
 }
 .section2{
     display: grid;
     background-color: white;
     grid-template-columns: 30% 40% 30%;
-    padding: 1%;
-    width: 100%;
     
-    margin-bottom: 20px;
+    width: 100%;
     
 }
 .header{
     display: flex;
     width: 100%;
+}
+.purple{
+    background: rgba(154, 25, 140, 1);
+    color: white;
+}
+.gray{
+    background:rgba(196, 196, 196, 0.41)
 }
