@@ -1,17 +1,22 @@
 import React from "react";
-import styles from "./styles.module.css";
+// import MicrosoftLogin from "react-microsoft-login";
+import "./LoginPage.css";
 
-function LoginPage() {
+const LoginPage = () => {
   return (
-    <div className={styles.loginContainer}>
-      <div className={styles.loginContent}>
-        <div className={styles.loginTitle}>
+    <div className="loginContainer">
+      <div className="loginContent">
+        <div className="loginTitle">
           <h2> Welcome to</h2>
+          <hr />
           <p>Quality Compliance Portal</p>
+        </div>
+        <div className="btn-submit">
+          <button className="btn-proceed">Proceed</button>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default LoginPage;

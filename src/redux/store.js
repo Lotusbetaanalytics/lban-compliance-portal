@@ -1,30 +1,20 @@
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 
-import { configureStore } from '@reduxjs/toolkit'
+const reducer = combineReducers({});
 
-
-
-const userInfoFromStorage = localStorage.getItem("studentInfo")
-  ? JSON.parse(localStorage.getItem("studentInfo"))
+const userInfoFromStorage = localStorage.getItem("userInfo")
+  ? JSON.parse(localStorage.getItem("userInfo"))
   : null;
 
-  
-
 const initialState = {
-  studentLogin: { userInfo: userInfoFromStorage },
-  
+  userLogin: { userInfo: userInfoFromStorage },
 };
 
-
 const store = configureStore({
-  reducer:{
-    
+  reducer: {
+    // postUserActive: postUserActiveReducer,
   },
   initialState,
- 
-}
-  
-  
-);
+});
 
 export default store;
-
