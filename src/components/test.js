@@ -12,7 +12,8 @@ import ReportTemplate from './Forms/ReportTemplate'
 const test = () => {
   return (
     <div className={styles.testing}>
-      <ReportTemplate/>
+      <ReportTemplate
+      />
     </div>
   )
 }

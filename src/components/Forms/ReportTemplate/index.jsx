@@ -84,20 +84,42 @@ HLO_weight_total,
 Exit_qps_total,
 Exit_weight_total,
 Gate_qps_total,
-Gate_weight_total
+Gate_weight_total,
+QAserialNumber_value,
+QAserial_onchange,
+email_onchange,
+email_value,
+date_onchange,
+date_value,
+solutionInitiate_onchange,
+solutionInitiate_value,
+typeOfIntiative_onchange,
+typeOfIntiative_value,
+status_onchange,
+status_value,
+QAEngineer_onchange,
+QAEngineer_value,
+phase_onchange,
+phase_value,
+qualityStageGate_onchange,
+qualityStageGate_value,
+deliveryPhase_value,
+DeliveryPhase_onchange,
+riskIssues_value,
+RiskIssues_onchange,
+supportingDocument_value,
+SupportingDocument_onchange
 }) => {
-  const [QAserialNumber,setQAserialNumber] = useState("");
-  const [email,setEmail] =useState("")
-  const [date,setDate]=useState("")
-  const [solutionInitiate,setSolutionInitiate] = useState("")
-  const [typeOfIntiative,setTypeOfIntiative]=useState("")
-  const [status,setStatus] = useState("")
-  const [QAEngineer,setQAEngineer] = useState("")
-  const [phase,setPhase] = useState("")
-  const [qualityStageGate,setQualityStageGate]= useState("")
-  const [deliveryPhase,setDeliveryPhase]= useState("")
-  const [riskIssues,setRiskIssues] = useState("")
-  const [supportingDocument,setSupportingDocument] = useState("")
+  
+  
+  
+  
+  
+  // const [phase,setPhase] = useState("")
+  // const [qualityStageGate,setQualityStageGate]= useState("")
+  // const [deliveryPhase,setDeliveryPhase]= useState("")
+  // const [riskIssues,setRiskIssues] = useState("")
+  // const [supportingDocument,setSupportingDocument] = useState("")
   const data = [
     {value:"bussiness solution"},
     {value:"data and AI"}
@@ -107,76 +129,76 @@ Gate_weight_total
       <div className={styles.section1}>
         <div className={styles.inputContainer}>
           <Input title={"QA Serial Number"} 
-          onChange={(e)=>setQAserialNumber(e.target.value)}
-          value={QAserialNumber}
+          onChange={QAserial_onchange}
+          value={QAserialNumber_value}
           type={"text"}/>
         </div>
         <div className={styles.inputContainer}>
           <Input title={"Email"} 
-          onChange={(e)=>setEmail(e.target.value)}
-          value={email}
+          onChange={email_onchange}
+          value={email_value}
           type={"email"}/>
         </div>
         <div className={styles.inputContainer}>
           <DateInput title={"Date"} 
-          onChange={(e)=>setDate(e.target.value)}
-          value={date}
-          type={date}/>
+          onChange={date_onchange}
+          value={date_value}
+          type={"date"}/>
         </div>
         <div className={styles.inputContainer}>
           <Input title={"Solution/Initiate"} 
-          onChange={(e)=>setSolutionInitiate(e.target.value)}
-          value={solutionInitiate}
+          onChange={solutionInitiate_onchange}
+          value={solutionInitiate_value}
           type={"text"}/>
         </div>
         
         <div className={styles.inputContainer}>
           <Select title={"Type of Intiative"}
-          value={typeOfIntiative}
+          value={typeOfIntiative_value}
           options={data}
-          onChange={(e)=>setTypeOfIntiative(e.target.value)}
+          onChange={typeOfIntiative_onchange}
           />
         </div>
         <div className={styles.inputContainer}>
           <Select title={"Status"}
-          value={status}
+          value={status_value}
           options={data}
-          onChange={(e)=>setStatus(e.target.value)}/>
+          onChange={status_onchange}/>
         </div>
         <div className={styles.inputContainer}>
           <Input title={"QA Engineer"} 
-          onChange={(e)=>setQAEngineer(e.target.value)}
-          value={QAEngineer}
+          onChange={QAEngineer_onchange}
+          value={QAEngineer_value}
           type={"text"}/>
         </div>
         <div className={styles.inputContainer}>
           <Select title={"Phase"}
-          value={phase}
+          value={phase_value}
           options={data}
-          onChange={(e)=>setPhase(e.target.value)}/>
+          onChange={phase_onchange}/>
         </div>
         <div className={styles.inputContainer}>
           <Input title={"Quality Stage Gate"} 
-          onChange={(e)=>setQualityStageGate(e.target.value)}
-          value={qualityStageGate}
+          onChange={qualityStageGate_onchange}
+          value={qualityStageGate_value}
           type={"text"}/>
         </div>
         <div className={styles.inputContainer}>
           <Input title={"Delivery Phase"} 
-          onChange={(e)=>setDeliveryPhase(e.target.value)}
-          value={deliveryPhase}
+          onChange={DeliveryPhase_onchange}
+          value={deliveryPhase_value}
           type={"text"}/>
         </div>
         <div className={styles.inputContainer}>
           <TextArea title={"Risk/Issues"} 
-          onChange={(e)=>setRiskIssues(e.target.value)}
-          value={riskIssues}
+          onChange={RiskIssues_onchange}
+          value={riskIssues_value}
           />
           </div>
           <div className={styles.inputContainer}>
           <FileInput title={"Supporting Document"} 
-          onChange={(e)=>setSupportingDocument(e.target.value)}
-          value={supportingDocument}
+          onChange={SupportingDocument_onchange}
+          value={supportingDocument_value}
           type={"file"}
           />
         </div>
